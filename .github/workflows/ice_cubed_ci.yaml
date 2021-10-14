@@ -9,7 +9,7 @@ jobs:
       fail-fast: false
       matrix:
         rails: ['5.2', '6.0.4', '6.1']
-        ruby: ['2.6', '2.7', '3.0', jruby, truffleruby]
+        ruby: ['2.6', '2.7', '3.0']
         exclude:
           - rails: '5.2'
             ruby: '3.0'
