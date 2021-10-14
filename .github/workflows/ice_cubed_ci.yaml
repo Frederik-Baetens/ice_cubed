@@ -6,14 +6,12 @@ name: Ice_Cubed CI
 jobs:
   rspec:
     strategy:
-      fail-fast: false
       matrix:
         rails: ['5.2', '6.0.4', '6.1']
         ruby: ['2.6', '2.7', '3.0']
         exclude:
           - rails: '5.2'
             ruby: '3.0'
-
     runs-on: ubuntu-latest
     env:
       RAILS_VERSION: ${{ matrix.rails }}
